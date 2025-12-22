@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Header */
+header {
+  background: #2563eb;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Container using flexbox for large screens */
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #1e3a8a;
+  color: white;
+  padding: 15px;
+  width: 200px;
+}
+
+/* Content */
+.content {
+  background: #f8fafc;
+  padding: 15px;
+  flex: 1;
+}
+
+/* FLOAT layout for medium screens */
+.sidebar-float {
+  float: left;
+  width: 40%;
+}
+.content-float {
+  float: left;
+  width: 60%;
+}
+.clear { clear: both; }
+
+/* -------------------------
+   MEDIA QUERIES
+   ------------------------- */
+
+/* <600px  — single column */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar, .content {
+    width: 100%;
+  }
+}
+
+/* 600–900px — use float layout */
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    display: block; /* disable flex */
+  }
+  .sidebar {
+    width: auto;
+  }
+  .sidebar-float { width: 30%; }
+  .content-float { width: 70%; }
+}
+
+/* >900px — flexbox layout */
+@media (min-width: 900px) {
+  .container {
+    display: flex; /* flexbox */
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>Responsive Layout</header>
+
+<div class="container">
+  
+  <!-- Sidebar -->
+  <div class="sidebar sidebar-float">Sidebar</div>
+
+  <!-- Content -->
+  <div class="content content-float">Main Content Area</div>
+
+  <div class="clear"></div>
+</div>
+
+</body>
+</html>
