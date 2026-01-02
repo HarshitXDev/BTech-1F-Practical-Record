@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+nav {
+  background: #444;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+section {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+ul {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.project {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Dark theme */
+.dark {
+  background: #121212;
+  color: #eee;
+}
+
+.dark header,
+.dark footer {
+  background: #000;
+}
+
+.dark nav {
+  background: #1e1e1e;
+}
+
+.dark .project {
+  background: #1e1e1e;
+}
